@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo</title>
+    <script type="application/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<h1>ToDo</h1>
+<h3>View tasks</h3>
+<label for="sortBy">Sort by</label>
+
+<select name="sortBy" id="sortBy">
+    <option value="volvo">name</option>
+    <option value="saab">eMail</option>
+    <option value="mercedes">status</option>
+</select>
+<div id="sortType">&#8691;</div>
+<br>
+<div id="tasks">
+    <div id="firstRow">
+        <label>
+            <input type="checkbox" disabled="disabled" data-status="0" checked>
+        </label>
+        <label>
+            <input type="text" class="name" placeholder="Name" readonly>
+        </label>
+        <label>
+            <input type="eMail" class="eMail" placeholder="eMail" readonly>
+        </label>
+        <label>
+            <input type="text" class="text" placeholder="Text" readonly>
+        </label>
+    </div>
+    <div id="secondRow"><label>
+        <input type="checkbox" disabled="disabled" data-status="1">
+    </label>
+        <label>
+            <input type="text" class="name" placeholder="Name" readonly>
+        </label>
+        <label>
+            <input type="eMail" class="eMail" placeholder="eMail" readonly>
+        </label>
+        <label>
+            <input type="text" class="text" placeholder="Text" readonly>
+        </label>
+    </div>
+    <div id="thirdRow"><label>
+        <input type="checkbox" disabled="disabled" data-status="10">
+    </label>
+        <label>
+            <input type="text" class="name" placeholder="Name" readonly>
+        </label>
+        <label>
+            <input type="eMail" class="eMail" placeholder="eMail" readonly>
+        </label>
+        <label>
+            <input type="text" class="text" placeholder="Text" readonly>
+        </label>
+    </div>
+</div>
+
+<h3>Add new task</h3>
+<div id="newTask"><label>
+    <input type="checkbox">
+</label>
+    <label>
+        <input type="text" class="name" placeholder="Name">
+    </label>
+    <label>
+        <input type="eMail" class="eMail" placeholder="eMail">
+    </label>
+    <label>
+        <input type="text" class="text" placeholder="Text">
+    </label>
+    <button>Add new task</button>
+</div>
+<br>
+<h3>Authorize</h3>
+<label>
+    <input type="text" placeholder="login" size="6">
+</label>
+<label>
+    <input type="password" placeholder="password" size="6">
+</label>
+<button>Login</button>
+
+
+<!--<table>
+    <thead>
+    Tasks:
+    </thead>
+    <tr>
+        <td>
+            Name &#8691;
+        </td>
+        <td>
+            eMail &#8691;
+        </td>
+        <td>
+            Text
+        </td>
+        <td>
+            Status &#8691;
+        </td>
+    </tr>
+    <tr>
+        <td>1
+        </td>
+    </tr>
+    <tr>
+        <td>2
+        </td>
+    </tr>
+    <tr>
+        <td>3
+        </td>
+    </tr>
+</table>-->
+
+<p>
+    help:
+</p>
+&#8679;
+&#8681;
+&#8691;
+<br>
+0 - задача не выполнена
+1 - задача не выполнена, отредактирована админом
+10 - задача выполнена
+11 - задача отредактирована админом и выполнена
+</body>
+</html>

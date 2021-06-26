@@ -1,0 +1,44 @@
+body {
+    font-size: large;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+select {
+    font-size: large;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+#tasks label, div {
+    display: inline-block;
+    padding: 5px;
+}
+
+input {
+    border: none;
+    border-bottom: #cccccc solid 1px;
+    font-size: large;
+}
+
+input[data-status='1']::before {
+    content: '!';
+    margin-left: -10px;
+}
+
+input[data-status='11']::before {
+    content: '!';
+    margin-left: -10px;
+}
+
+td, td {
+    border: solid 1px #cccccc;
+    padding: 5px;
+}
+
+table {
+    border: solid 2px #cccccc;
+    border-collapse: collapse;
+}
+
+#sortType {
+    display: inline;
+}
