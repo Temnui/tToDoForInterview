@@ -13,6 +13,16 @@ select {
     padding: 5px;
 }
 
+.currentPage {
+    text-decoration: underline;
+}
+
+.page:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 input {
     border: none;
     border-bottom: #cccccc solid 1px;
